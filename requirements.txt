@@ -1,0 +1,8 @@
+streamlit
+pandas
+numpy
+seaborn
+matplotlib
+plotly
+pillow
+scikit-learn ==1.5.2
