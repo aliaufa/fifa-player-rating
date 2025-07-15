@@ -17,11 +17,20 @@ def run():
     st.image(image, caption='FIFA 2022')
 
     # Menambahkan Teks
-    st.write('Page ini dibuat oleh **Verren Monica**')
-    st.write('# Halo')
-    st.write('## Halo')
-    st.write('### Halo')
+    st.write('Page ini dibuat oleh **Ali Aufa**')
 
+    # magic syntax
+
+    st.write('# Suka main FIFA?')
+
+    '''
+    Pada page kali ini, penulis akan melakukan explorasi sederhana.
+    Dataset yang digunakan adalah dataset FIFA 2022.
+    Dataset ini berasal dari web sofifa.com.
+    '''
+
+    #
+    st.write('# Dataset')
     # Show DataFrame
     data = pd.read_csv('https://raw.githubusercontent.com/FTDS-learning-materials/phase-1/master/w1/P1W1D1PM%20-%20Machine%20Learning%20Problem%20Framing.csv')
     st.dataframe(data)

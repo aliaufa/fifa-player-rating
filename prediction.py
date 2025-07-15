@@ -62,7 +62,6 @@ def run():
         # tombol predict
         submitted = st.form_submit_button('Predict')
     
-    st.write('## Data User')
     # Nama kolom samakan dengan data train
     data_inf = {
             'Name': name,
@@ -79,8 +78,14 @@ def run():
             'DefendingTotal': defending,
             'PhysicalityTotal': physicality
             }
+    # data_inf =pd.DataFrame([data_inf])
+    # st.dataframe(data_inf)
+    st.write("## Data User")
+
+    with st.expander("Lihat DataFrame mentah", expanded=False):
+        st.dataframe(data_inf, width= 400)
+    
     data_inf =pd.DataFrame([data_inf])
-    st.dataframe(data_inf)
 
     if submitted:
         # Split between categorical and numerical
