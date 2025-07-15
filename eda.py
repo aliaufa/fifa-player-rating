@@ -23,11 +23,11 @@ def run():
 
     st.write('# Suka main FIFA?')
 
-    '''
+    st.write('''
     Pada page kali ini, penulis akan melakukan explorasi sederhana.
     Dataset yang digunakan adalah dataset FIFA 2022.
     Dataset ini berasal dari web sofifa.com.
-    '''
+    ''')
 
     #
     st.write('# Dataset')
